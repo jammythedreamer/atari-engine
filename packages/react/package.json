@@ -1,0 +1,26 @@
+{
+  "name": "@atari-engine/react",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "echo 'Phase 2: Rule Builder UI'",
+    "test": "echo 'No tests yet'"
+  },
+  "dependencies": {
+    "@atari-engine/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.7.2"
+  }
+}

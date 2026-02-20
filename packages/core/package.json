@@ -1,0 +1,55 @@
+{
+  "name": "@atari-engine/core",
+  "version": "0.1.0",
+  "description": "Lightweight rule evaluation engine for conditions and feature flags",
+  "author": "JammyTheDreamer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jammythedreamer/atari-engine.git"
+  },
+  "homepage": "https://github.com/jammythedreamer/atari-engine",
+  "bugs": {
+    "url": "https://github.com/jammythedreamer/atari-engine/issues"
+  },
+  "keywords": [
+    "rules",
+    "engine",
+    "evaluation",
+    "conditions",
+    "feature-flags",
+    "validation"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build && pnpm run test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
+  }
+}
