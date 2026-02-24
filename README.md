@@ -2,8 +2,8 @@
 
 Lightweight rule evaluation engine for A/B testing, feature flags, and user targeting.
 
-[![npm (scoped)](https://img.shields.io/npm/v/@atari-engine/core.svg)](https://www.npmjs.com/package/@atari-engine/core)
-[![npm (scoped)](https://img.shields.io/npm/v/@atari-engine/react.svg)](https://www.npmjs.com/package/@atari-engine/react)
+[![@atari-engine/core](https://img.shields.io/npm/v/@atari-engine/core.svg?label=%40atari-engine%2Fcore)](https://www.npmjs.com/package/@atari-engine/core)
+[![@atari-engine/react](https://img.shields.io/npm/v/@atari-engine/react.svg?label=%40atari-engine%2Freact)](https://www.npmjs.com/package/@atari-engine/react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Highlights
