@@ -1,0 +1,33 @@
+.atari-actionBar {
+  display: flex;
+  gap: var(--atari-spacing, 8px);
+  margin-top: var(--atari-spacing, 8px);
+}
+
+.atari-actionBar-btn {
+  padding: 6px 12px;
+  border-radius: var(--atari-radius, 6px);
+  font-size: 0.875rem;
+  cursor: pointer;
+  border: 1px solid var(--atari-border, #d1d5db);
+  background: var(--atari-bg, #fff);
+  color: var(--atari-text, #1f2937);
+}
+
+.atari-actionBar-btn:hover {
+  background: var(--atari-hover-bg, #f3f4f6);
+}
+
+.atari-actionBar-btnPrimary {
+  background: var(--atari-primary, #3b82f6);
+  color: #fff;
+  border-color: var(--atari-primary, #3b82f6);
+}
+
+.atari-actionBar-btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.atari-actionBar-btnSecondary {
+  background: var(--atari-bg, #fff);
+}

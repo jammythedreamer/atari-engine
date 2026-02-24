@@ -1,0 +1,30 @@
+.atari-ruleEditor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--atari-spacing, 8px);
+  padding: var(--atari-spacing, 8px);
+  background: var(--atari-bg, #fff);
+  border: 1px solid var(--atari-border, #d1d5db);
+  border-radius: var(--atari-radius, 6px);
+}
+
+.atari-ruleEditor-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: var(--atari-text, #1f2937);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.atari-ruleEditor-remove:hover {
+  color: var(--atari-error, #ef4444);
+}
+
+.atari-ruleEditor-error {
+  width: 100%;
+  color: var(--atari-error, #ef4444);
+  font-size: 0.875rem;
+}

@@ -1,0 +1,52 @@
+/* Theme variables for @atari-engine/react Rule Builder */
+.atari-ruleBuilder {
+  --atari-bg: #ffffff;
+  --atari-border: #d1d5db;
+  --atari-text: #1f2937;
+  --atari-primary: #3b82f6;
+  --atari-focus-ring: rgba(59, 130, 246, 0.2);
+  --atari-error: #ef4444;
+  --atari-radius: 6px;
+  --atari-spacing: 8px;
+  --atari-group-bg: #f9fafb;
+  --atari-hover-bg: #f3f4f6;
+  --atari-chip-bg: #eff6ff;
+  --atari-chip-border: #bfdbfe;
+  --atari-chip-hover-bg: #fef2f2;
+  --atari-chip-hover-border: #fca5a5;
+  --atari-placeholder: #9ca3af;
+}
+
+@media (prefers-color-scheme: dark) {
+  .atari-ruleBuilder {
+    --atari-bg: #1f2937;
+    --atari-border: #4b5563;
+    --atari-text: #f9fafb;
+    --atari-primary: #60a5fa;
+    --atari-focus-ring: rgba(96, 165, 250, 0.3);
+    --atari-error: #f87171;
+    --atari-group-bg: #111827;
+    --atari-hover-bg: #374151;
+    --atari-chip-bg: #1e3a5f;
+    --atari-chip-border: #2563eb;
+    --atari-chip-hover-bg: #450a0a;
+    --atari-chip-hover-border: #dc2626;
+    --atari-placeholder: #6b7280;
+  }
+}
+
+.atari-ruleBuilder[data-theme="dark"] {
+  --atari-bg: #1f2937;
+  --atari-border: #4b5563;
+  --atari-text: #f9fafb;
+  --atari-primary: #60a5fa;
+  --atari-focus-ring: rgba(96, 165, 250, 0.3);
+  --atari-error: #f87171;
+  --atari-group-bg: #111827;
+  --atari-hover-bg: #374151;
+  --atari-chip-bg: #1e3a5f;
+  --atari-chip-border: #2563eb;
+  --atari-chip-hover-bg: #450a0a;
+  --atari-chip-hover-border: #dc2626;
+  --atari-placeholder: #6b7280;
+}

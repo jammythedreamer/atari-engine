@@ -1,0 +1,75 @@
+.atari-ruleGroupEditor {
+  padding: var(--atari-spacing, 8px);
+  border: 1px solid var(--atari-border, #d1d5db);
+  border-radius: var(--atari-radius, 6px);
+  background: var(--atari-group-bg, #f9fafb);
+}
+
+.atari-ruleGroupEditor-header {
+  margin-bottom: var(--atari-spacing, 8px);
+}
+
+.atari-ruleGroupEditor-conditions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--atari-spacing, 8px);
+}
+
+.atari-ruleGroupEditor-condition {
+  min-width: 0;
+}
+
+.atari-ruleGroupEditor-nested {
+  position: relative;
+  padding-left: 12px;
+  border-left: 2px solid var(--atari-primary, #3b82f6);
+}
+
+.atari-ruleGroupEditor-removeGroup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75rem;
+  color: var(--atari-primary, #3b82f6);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.atari-ruleGroupEditor-removeGroup:hover {
+  text-decoration: underline;
+}
+
+.atari-logicalSwitch {
+  display: inline-flex;
+  border: 1px solid var(--atari-border, #d1d5db);
+  border-radius: var(--atari-radius, 6px);
+  overflow: hidden;
+}
+
+.atari-logicalSwitch-btn {
+  padding: 4px 12px;
+  font-size: 0.8125rem;
+  border: none;
+  background: var(--atari-bg, #fff);
+  color: var(--atari-text, #1f2937);
+  cursor: pointer;
+}
+
+.atari-logicalSwitch-btn:not(:last-child) {
+  border-right: 1px solid var(--atari-border, #d1d5db);
+}
+
+.atari-logicalSwitch-btn:hover {
+  background: var(--atari-hover-bg, #f3f4f6);
+}
+
+.atari-logicalSwitch-btnActive {
+  background: var(--atari-primary, #3b82f6);
+  color: #fff;
+}
+
+.atari-logicalSwitch-btnActive:hover {
+  opacity: 0.9;
+}

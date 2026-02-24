@@ -1,26 +1,80 @@
 {
   "name": "@atari-engine/react",
   "version": "0.1.0",
-  "private": true,
+  "description": "React components for building and editing Atari rule groups",
+  "author": "JammyTheDreamer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jammythedreamer/atari-engine.git"
+  },
+  "homepage": "https://github.com/jammythedreamer/atari-engine",
+  "bugs": {
+    "url": "https://github.com/jammythedreamer/atari-engine/issues"
+  },
+  "keywords": [
+    "rules",
+    "react",
+    "rule-builder",
+    "atari-engine",
+    "conditions"
+  ],
+  "private": false,
   "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./src/index.ts",
-      "types": "./src/index.ts"
-    }
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
-    "build": "echo 'Phase 2: Rule Builder UI'",
-    "test": "echo 'No tests yet'"
+    "build": "tsup && postcss src/styles.css -o dist/styles.css",
+    "test": "vitest run",
+    "prepublishOnly": "pnpm run build && pnpm run test"
   },
   "dependencies": {
-    "@atari-engine/core": "workspace:*"
+    "@atari-engine/core": "0.1.0"
   },
   "peerDependencies": {
-    "react": ">=18.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "typescript": "^5.7.2"
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "jsdom": "^25.0.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    }
   }
 }

@@ -1,0 +1,14 @@
+.atari-operatorSelector {
+  display: flex;
+  align-items: center;
+  gap: var(--atari-spacing, 8px);
+}
+
+.atari-operatorSelector-select {
+  min-width: 140px;
+}
+
+.atari-operatorSelector-error {
+  color: var(--atari-error, #ef4444);
+  font-size: 0.875rem;
+}

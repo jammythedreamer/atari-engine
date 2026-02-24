@@ -1,0 +1,18 @@
+.atari-input {
+  padding: 6px 10px;
+  border: 1px solid var(--atari-border, #d1d5db);
+  border-radius: var(--atari-radius, 6px);
+  background: var(--atari-bg, #fff);
+  color: var(--atari-text, #1f2937);
+  font-size: 0.875rem;
+}
+
+.atari-input:focus {
+  outline: none;
+  border-color: var(--atari-primary, #3b82f6);
+  box-shadow: 0 0 0 2px var(--atari-focus-ring, rgba(59, 130, 246, 0.2));
+}
+
+.atari-input::placeholder {
+  color: var(--atari-placeholder, #9ca3af);
+}

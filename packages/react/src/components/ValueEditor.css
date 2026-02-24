@@ -1,0 +1,77 @@
+.atari-valueEditor {
+  min-width: 120px;
+}
+
+.atari-valueEditor-input,
+.atari-valueEditor-select {
+  min-width: 140px;
+}
+
+.atari-valueEditor-error {
+  display: block;
+  color: var(--atari-error, #ef4444);
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+/* Chip-style array input (in / not_in) */
+.atari-valueEditor-chipField {
+  min-width: 200px;
+}
+
+.atari-valueEditor-chipWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border: 1px solid var(--atari-border, #d1d5db);
+  border-radius: var(--atari-radius, 6px);
+  background: var(--atari-bg, #fff);
+  cursor: text;
+}
+
+.atari-valueEditor-chipWrap:focus-within {
+  border-color: var(--atari-primary, #3b82f6);
+  box-shadow: 0 0 0 2px var(--atari-focus-ring, rgba(59, 130, 246, 0.2));
+}
+
+.atari-valueEditor-chip {
+  display: inline-flex;
+  align-items: center;
+  background: var(--atari-chip-bg, #eff6ff);
+  border: 1px solid var(--atari-chip-border, #bfdbfe);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  color: var(--atari-text, #1f2937);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.atari-valueEditor-chip:hover {
+  background: var(--atari-chip-hover-bg, #fef2f2);
+  border-color: var(--atari-chip-hover-border, #fca5a5);
+  color: var(--atari-error, #ef4444);
+  text-decoration: line-through;
+}
+
+.atari-valueEditor-chipInput {
+  flex: 1 1 60px;
+  min-width: 60px;
+  border: none;
+  outline: none;
+  padding: 2px 0;
+  font-size: 0.875rem;
+  background: transparent;
+  color: var(--atari-text, #1f2937);
+}
+
+.atari-valueEditor-chipInput::placeholder {
+  color: var(--atari-placeholder, #9ca3af);
+}

@@ -1,0 +1,22 @@
+.atari-fieldSelector {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--atari-spacing, 8px);
+}
+
+.atari-fieldSelector-select,
+.atari-fieldSelector-input,
+.atari-fieldSelector-type {
+  min-width: 120px;
+}
+
+.atari-fieldSelector-type {
+  max-width: 140px;
+}
+
+.atari-fieldSelector-error {
+  color: var(--atari-error, #ef4444);
+  font-size: 0.875rem;
+  width: 100%;
+}
